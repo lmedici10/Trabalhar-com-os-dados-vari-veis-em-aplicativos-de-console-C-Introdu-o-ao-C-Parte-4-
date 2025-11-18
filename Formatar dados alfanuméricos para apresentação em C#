@@ -1,0 +1,19 @@
+string customerName = "Ms. Barros";
+
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+
+string newProduct = "Glorious Future";
+decimal newReturn = 0.1313m;
+decimal newProfit = 63000000.0m;
+
+// Mensagem principal
+Console.WriteLine($"Dear {customerName},\n" +
+    $"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n\n" +
+    $"Currently, you own {currentShares:N2} shares at a return of {currentReturn:P2}.\n\n" +
+    $"Our new product, {newProduct} offers a return of {newReturn:P2}.  Given your current volume, your potential profit would be ${newProfit:N2}.\n\n" +
+    $"Here's a quick comparison:\n\n" +
+    $"{currentProduct,-20} {currentReturn:P2}   ${currentProfit:N2}\n" +
+    $"{newProduct,-20} {newReturn:P2}   ${newProfit:N2}");
